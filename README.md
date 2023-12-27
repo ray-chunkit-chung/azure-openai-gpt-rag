@@ -15,6 +15,9 @@ https://github.com/Azure/gpt-rag-ingestion
 git clone https://github.com/azure/gpt-rag-ingestion
 cd gpt-rag-ingestion
 func azure functionapp publish test2-raychung-openai-gpt-rag-data-ingestion --python
+
+pip install -r requirements.txt --use-deprecated=legacy-resolver
+python setup.py -s SUBSCRIPTION_ID -r RESOURCE_GROUP -f FUNCTION_APP_NAME
 ```
 
 - RG: rg-openai-gpt-rag-data-ingestion
